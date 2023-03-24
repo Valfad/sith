@@ -1,10 +1,5 @@
-import Anchors from './modules/anchors.js'
-import MousePRLX from './modules/parallax-mouse.js'
-
-//Инициализация
-//========================================================================================================================================================
-//Кастомный селект
-//Select.init(true)
+import Anchors from './anchors.js'
+import MousePRLX from './parallax-mouse.js'
 
 //Якоря
 Anchors.init(false)
