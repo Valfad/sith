@@ -2,8 +2,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220517211423">	
-	<script defer="" src="js/app.min.js?_v=20220517211423"></script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20230328170152">	
+	<script defer="" src="js/app.min.js?_v=20230328170152"></script>
 	<title>Главная</title>
 </head>
 <body>
@@ -89,7 +89,7 @@
 						</div>					
 					</div>									
 				</div>
-				<a class="header__want-project button" href="#">хочу проект</a>				
+				<a class="header__want-project button" href="#form-popup">хочу проект</a>				
 			</div>			
 		</div>		
 	</div>	
@@ -136,7 +136,7 @@
 	</div>	
 </div>
 
-			<section class="about-us page-block" id="about-us">
+			<div class="about-us page-block" id="about-us">
 	<div class="about-us__container">
 		<div class="about-us__body">
 			<h2 class="about-us__title title">о нас.</h2>
@@ -159,7 +159,7 @@
 					</div>		
 					<div class="about-us__benefit benefit">
 						<div class="benefit__icon"><img src="img/user-scan.svg" alt="" decoding="async"></div>
-						<p class="benefit__text text">Креативный подход <br> к каждому клиенту</p>						
+						<p class="benefit__text text">Быстрые сроки</p>						
 					</div>			
 					<div class="about-us__benefit benefit">
 						<div class="benefit__icon"><img src="img/user-scan.svg" alt="" decoding="async"></div>
@@ -173,7 +173,7 @@
 			</div>
 		</div>		
 	</div>	
-</section>
+</div>
 			<div class="cases page-block" id="cases">
 	<div class="cases__container">
 		<h2 class="cases__title title">кейсы.</h2>		
@@ -282,6 +282,25 @@
 		</div>		
 	</div>	
 </div>
+            <div id="form-popup" class="form-popup popup" data-popup="">
+    <div class="form-popup__content popup__content">
+        <h3 class="form-popup__title">Дайте нам знать, как с <span class="accent">вами</span> cвязаться!</h3>
+        <form action="" class="form-popup__form" id="form">
+            <input class="form-popup__input input" type="tel" placeholder="Ваше имя" required="" name="clientName">
+            <input class="form-popup__input input" type="tel" placeholder="Ваш номер телефона" required="" name="clientTelnum">
+            <input class="form-popup__input input" type="email" placeholder="Ваш email" required="" name="clientEmail">
+            <button class="form-popup__button button button_small">Отправить</button>
+        </form>
+    </div>
+</div>
+<div class="form-message" id="form-message">
+   
+</div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js?_v=20230328170152">
+</script>
+<script>
+    
+</script>
 		</div>	
 		<footer class="footer">
 	<div class="footer__container-big">
@@ -297,7 +316,7 @@
 			<div class="footer__top">
 				<div class="footer__connection">
 					<p class="footer__main-thing main-thing">давайте обсудим	<br> ваш <span class="accent">проект</span>.</p>
-					<a class="footer__button button" href="#">написать нам</a>
+					<a class="footer__button button" href="#form-popup">написать нам</a>
 				</div>	
 
 				<adress class="footer__contacts">
